@@ -5,6 +5,9 @@ fn main() {
     let missiles: i32 = STARTING_MISSILES;
     let ready: i32 = READY_AMOUNT;
 
+    // This will generate an error since you cannot modify a constant.
+    // READY_AMOUNT = 3;
+
     // Example to declare multiple variables.
     // For unused variables, use the underscore prefix.
     let (mut _a, mut _b): (i32, i32) = (3, 2);
