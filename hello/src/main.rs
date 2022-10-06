@@ -1,3 +1,5 @@
+use hello::greet;
+
 fn main() {
     println!("Hello, world!");
 
@@ -8,4 +10,11 @@ fn main() {
         println!("x = {}, y = {}", x, y);
     }
     println!("x = {}", x);
+
+    // This call is explicitly using the `greet` function from the `hello` crate.
+    // We can also use the `use` keyword to bring a function into scope.
+    hello::greet();
+
+    // This call is using the `use` keyword to bring the `greet` function into scope.
+    greet();
 }
